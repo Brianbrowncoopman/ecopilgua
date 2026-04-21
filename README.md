@@ -1,4 +1,4 @@
-
+EVALUACION 1
 
 ASIGNATURA			: DISEÑO WEB 
 
@@ -553,3 +553,329 @@ David Campos realizó la búsqueda exhaustiva de la información particular del 
 Felipe Rosales contribuyó en la selección de las imágenes, su modificación y edición, la revisión de los antecedentes de la emprendedora para búsqueda de información adicional y el ajuste de los verificadores del informe. 
 
 A modo general, todos los integrantes del equipo contribuyeron en cada una de las actividades del proyecto en distinta medida, con sus respectivos liderazgos por tarea. Cada una fue revisada, discutida, modificada y validada en su conjunto, para fortalecer la toma de decisiones. Ello, garantizó el trabajo en equipo con funciones específicas que contribuyeron al logro de los resultados esperados. 
+
+
+
+
+####################################################################################
+########################EVALUACION 2 ################################################
+####################################################################################
+
+
+
+
+Busca trabajo en iplacex s.a . Encuentra empleo en iplacex ...  
+
+  
+
+ASIGNATURA : DISEÑO WEB  
+
+AÑO  : 2026  
+
+EVALUACIÓN NÚMERO : 2  
+
+FECHA DE ENTREGA : 21 DE ABRIL DE 2026.  
+
+INTEGRANTES GRUPO II: ALEJANDRA XIMENA FREDES VELOZO  
+
+  BRIAN RODRIGO BROWN COOPMAN  
+
+  MARIA CAMILA CALLE HOLGUIN  
+
+  DAVID NEFI CAMPOS VALDIVIA  
+
+  VANESSA MACARENA RIFFO ROJAS  
+
+  FELIPE GONZALO ROSALES LILLO  
+
+DOCENTE  : FELIPE IGOR FLORES VALDEBENITO.  
+
+LINK   : https://github.com/Brianbrowncoopman/ecopilgua INFORME DE ENTREGA  
+
+  
+
+Cambios y mejoras visuales aplicadas – HTML.  
+
+  
+
+A continuación, se detalla cada uno de los puntos requeridos para dar cumplimiento a los tres puntos de la rúbrica.   
+
+  
+
+En el trabajo inicial que comenzó durante la entrega de la evaluación N° 1, se observa una etiqueta <head> básica:  
+
+  
+
+  
+
+En su propuesta de mejora, la etiqueta <head> contiene una etiqueta <link> que enlaza a la página “style.css”, la que posee todas las propiedades asociadas al estilo de la web. Adicionalmente, otra etiqueta <link> que lleva a una web “cloudflare” para renderizar íconos prestablecidos.   
+
+  
+
+  
+
+  
+
+En cuanto al <body> previo, se configuraron etiquetas <a>.  
+
+  
+
+  
+
+En su versión mejorada, dentro del <header> se creó un <div> con el objetivo de reorganizar los links y las imágenes. De este modo, primero se ingresaron las imágenes dentro del <div>, para luego configurar una etiqueta <nav> que muestra la información horizontalmente, agregando botones <button> con la etiqueta <a> que referencia cada link que contiene el menú general del sitio.   
+
+  
+
+En cuanto a la etiqueta <main>, inicialmente contenía otras tipo <section>.  
+
+  
+
+  
+
+  
+
+En la versión vigente, a las etiquetas <section> se les dio un id y/o una clase para manipularlas desde el archivo “style.css”.   
+
+  
+
+En la versión antigua, una de las etiquetas <section> tenía un id denominado Productos. También, había un <section> que contenía las imágenes.  
+
+  
+
+  
+
+  
+
+En la versión mejorada, dentro de dicho <section> se puso un <h2> dentro del <div> para la optimización de su manejo. Además, se modificó por un <div> con clase “Galería”. Cada imagen ahora se ubica dentro de un <div>, donde cada <div> tiene la misma clase denominada “producto-item”, con el fin de darle el mismo estilo. Dentro de ello, se agregó cada imagen y un <h5>. Además, se añadieron tres imágenes nuevas.   
+
+  
+
+  
+
+En la versión previa, la sección “Testimonio” contenía diferentes <div> para cada uno de ellos.   
+
+  
+
+  
+
+En la versión actualizada, se agrega un <div class=“testigo-container”>, que es el contenedor padre para los <div class= “card”>, de modo que su manipulación pueda ejecutarse agrupadamente. El testimonio como tal quedó dentro de un párrafo mediante la etiqueta <p>, mientras que, a través un <h6> la referencia.   
+
+  
+
+  
+
+  
+
+En la versión previa, se configuró una etiqueta <section> con el id “Contacto”.   
+
+  
+
+  
+
+Mientras que, en su versión actualizada, se agrega una etiqueta <div> con la clase “contacto-box”, que, en ella, se agregó, a través de una etiqueta <a> el link de WhatsApp y un <h3> para acceder a un ícono invocando a la biblioteca señalada y configurada en el <head>.   
+
+  
+
+  
+
+Para las redes, mediante etiquetas <a> se agregaron los links de las redes sociales.  
+
+  
+
+En su versión actualizada, mediante un <div class=“social-links”>, se agrega cada ícono con la biblioteca configurada en el main, cerrándolo.   
+
+  
+
+  
+
+Para finalizar, en la versión inicial había un link para llevar a la parte superior de la web.  
+
+  
+
+  
+
+En la nueva versión, dicho link se agregó dentro de un <div>. A dicho link, se le agregó una etiqueta invocando a la biblioteca ya señalada.   
+
+  
+
+    
+
+Con ello, se finaliza la configuración del código HTML.  
+
+Justificación de las decisiones de diseño  
+
+  
+
+Para implementar los cambios, se optó hacerlo de manera separada del archivo original. Para ello, se crea un archivo denominado “style.css”, el que contiene todas las configuraciones de diseño específica para aplicar, y ser invocado desde “index.html”. Lo anterior, para cumplir los objetivos de la rúbrica.  
+
+  
+
+Para la configuración general que afecta a todos los elementos del sitio web, se quitan los márgenes y espacios que existen por defecto. De este modo, mediante un “box-sizing: boder-box” se controlan los tamaños  
+
+* { margin: 0; padding: 0; box-sizing: border-box; }  
+
+  
+
+En cuanto al HTML, se configura un comportamiento al hacer click en un enlace interno durante la navegación, mediante “smooth” que provoca que baje de manera suave. Por otro lado, se implementa “scroll-padding-top” para evitar que el menú pueda tapar el contenido al desplazarse entre secciones.    html {  
+
+    scroll-behavior: smooth;     scroll-padding-top: 100px;  
+
+}  
+
+  
+
+Respecto al estilo del diseño del cuerpo (Body), se definieron aspectos tipográficos como la fuente, espacios entre líneas y el color. Para el fondo, se implementan tres capas con un color semitransparente (“background-blend-mode: overlay”), un logo en el centro, y una imagen de fondo (ambas mediante url).  
+
+  
+
+Sobre el encabezado (Header) que contiene el menú superior, se deja ajustado a nivel superior posicionado con un “sticky”, esto lo mantiene dijo durante el desplazamiento. Se configura de la siguiente manera:  
+
+header {     position: sticky;     top: 0;  
+
+}  
+
+  
+
+Como estructura principal, mediante un “main” con “display flex” se organiza la página, quedando todo en una columna y centrado. De este modo se ve ordenado y adaptable a distintos tamaños de pantallas.  
+
+main {     display: flex;     flex-direction: column;     align-items: center;  
+
+}  
+
+  
+
+Luego, para las secciones del sitio web, cada una tiene espacio entre ellas con bordes redondeados. Ello mejora la separación visual junto a la estética.  
+
+section {     margin-bottom: 4rem;     border-radius: 10px;  
+
+}  
+
+  
+
+Respecto a la jerarquía del contenido, mediante etiquetas “h1” y “h2” se diferencian los títulos principales de los secundarios.   
+
+  
+
+Para configurar la galería de productos, se diseña una rejilla automática mediante “display: grid”. .galeria {     display: grid;     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+
+}  
+
+  
+
+Posteriormente, se puede observar que para cada producto se configuran efectos visuales de tipo interactivos. De este modo, se vuelven dinámicos.   
+
+.producto-item:hover {     transform: translateY(-10px);  
+
+}  
+
+  
+
+Para la sección de los testimonios, se crean tarjetas que crecen al momento de pasar el mouse por sobre ellas.  
+
+.card:hover {     transform: scale(1.05);  
+
+}  
+
+  
+
+En cuanto a los botones, se configuraron estilos diferenciados, donde las redes sociales cambian de color al interactuar, mientras que para WhatsApp se presenta un diseño redondeado.   
+
+  
+
+Finalmente, para el pie de página (“footer”) se configura un borde redondeado, permitiendo al sitio verse más armónico.  
+
+footer {     border-radius: 50px 50px 0 0;  
+
+}  
+
+    
+
+Capturas de pantalla  
+
+• Configuración previa  
+
+Group 8005, Objeto agrupado  
+
+  
+
+  
+
+    
+
+• Configuración posterior  
+
+  
+
+Group 7752, Objeto agrupado  
+
+Group 7772, Objeto agrupado  
+
+  
+
+  
+
+    
+
+Reuniones de trabajo  
+
+  
+
+Reunión lunes 13 de abril de 2026.  
+
+Group 7825, Objeto agrupado 
+
+  
+
+  
+
+  
+
+  
+
+Reunión martes 14 de abril de 2026.  
+
+  
+
+  
+
+  
+
+Reunión domingo 19 de abril de 2026.  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+   
+
+  
+
+    
+
+Aporte individual  
+
+  
+
+Brian Brown contribuyó con la elaboración de las etiquetas y uso de CSS, que fue añadiendo progresivamente en el trabajo.  
+
+David Campos asesoró técnicamente a Brian Brown durante la implementación de las etiquetas.   
+
+Alejandra Fredes, María Camila Calle y Vanessa Riffo orientaron los aspectos del diseño a medida que se iban aplicando los cambios, con el fin de revisar en el momento su implementación pensando en el usuario.  
+
+Felipe Rosales contribuyó en recopilación del material, la elaboración del borrador del informe y la presentación de su versión final, ajustando los verificadores del informe previo visto bueno del grupo.   
+
+A modo general, el equipo en su totalidad contribuyó en las diferentes etapas, para una entrega exitosa. Cada etapa fue discutida, modificada y validada a modo grupal. De este modo, se garantizó la participación de todos los integrantes.   
+
+
